@@ -12,10 +12,10 @@ Includes user registration/login and an admin dashboard to manage bookings/servi
 ## Key Features
 - User authentication (Register / Login)
 - Booking workflow (customers can create/manage bookings)
-- Admin functionality (manage bookings/services/users) *(edit this to match your app)*
+- Admin functionality (manage bookings/services/users) 
 - Database-backed pages and forms
 
-The Full Documentation can be read in Documentation.docx
+The Full Documentation can be read in Documentation.pdf
 ---
 
 ## How to Run Locally (XAMPP)
@@ -49,7 +49,7 @@ Open in your browser:
 http://localhost/home-cleaning-webapp/
 
 
-Demo Accounts (for quick access)
+### Demo Accounts (for quick access)
 
 Use the following accounts to explore features without registering:
 
@@ -67,3 +67,4 @@ Password: JJ1122
 
 Note: These accounts exist only in the sample database from the SQL script.
 You can also register a new account from the Register page.
+
