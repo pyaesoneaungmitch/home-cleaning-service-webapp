@@ -1,0 +1,1138 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Left Navigation Bar */
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #2F5846;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color:#F6F6F6;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #F6F6F6;
+    color:  #0C3c01;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: #F6F6F6;
+  }
+
+.sidebar img
+{
+    align-self: center;
+    width: 90%;
+    height: auto;
+    padding: 10pt;
+    margin: auto;
+}
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+/*---Banner---*/  
+.banner img
+{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+}
+
+/*--For SlideShow*/
+
+.product h2
+{
+    color: #2F5846;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+h1
+{
+    color: #2F5846;
+    padding-left: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.product img
+{
+    width: 300px;
+    height: 250px;
+    padding-right: 20px;
+}
+
+/*----------------PROFILE------------*/
+
+        .profile-initial {
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bolder;
+        }
+        .profile-initial a
+        {
+          color: #111111;
+        }
+
+        .profile-initial a:hover
+        {
+          background-color: #ccc;
+          border-radius: 50%;
+          color: #0C3c01;
+          
+          .full-name {
+            padding: 5px;
+            font-size: 20px;
+            color: #ccc;
+          }
+        }
+
+        .full-name {
+          padding: 5px;
+          font-size: 20px;
+          color: #FFFFFF;
+        }
+
+
+.profile
+{
+    margin: auto;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.profile a
+{
+    margin: auto;
+    padding: 0%;
+    width: auto;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.profile a.active {
+    background-color:transparent;
+  }
+  
+  /* Links on mouse-over */
+  .profile a:hover:not(.active) {
+    background-color:transparent;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width:300px;
+    height: 320px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: arial;
+    padding-bottom: 30 px;
+    padding-left: 20px;
+    background-color: #ffffff;
+    padding-right: 20px;
+  }
+
+  .card a
+  {
+    background-color:white;
+    color: crimson;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border: solid;
+  }
+
+  .card a:hover
+  {
+    background-color: crimson;
+    color:white;
+    
+  }
+
+  .InitialBig
+  {
+    background-color: #2F5846;
+    color: #ffffff;
+    width: 100px;
+    height:auto;
+    border-radius: 40%;
+    font-size: 50px;
+    text-align: center;
+  }
+
+/*----------Data Table-------------*/
+.TableContainer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.TableContainer h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.styled-table thead tr {
+  background-color: #63b598;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #63b598;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #d5f5e3;
+  cursor: pointer;
+}
+
+/*-------Service Form-------*/
+
+.FormUI
+{
+  margin-top: -30px;
+  width: 1400px;
+  display: flex;
+  padding: 30px;
+  align-content: center;
+}
+
+.RLUI
+{
+  text-align: start;
+}
+
+
+.LeftUI
+{
+  width: 70%;
+  padding-left:  30px;
+  padding-right: 30px;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.ExtraUI
+{
+  margin-top: -20px;
+  width: 100%;
+  padding: 30px;
+  margin-left: -30px;
+  height: auto;
+  background-color:#2F5846 ;
+  border-radius: 10px;
+}
+
+.RightUI
+{
+  margin-left: 150px;
+  width: 50%;
+  height: 370px;
+  background-color: #2F5846;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px 20px 10px 10px;
+  color: #FFFFFF;
+}
+
+.RightUI button
+{
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color:#FFE26A;
+    color:#2F5846;
+    font-size:20px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid #ffffff;
+}
+.LeftUI label {
+    display: block;
+    margin-top: 20px;
+    
+}
+
+.LeftUI select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+} 
+
+.ServiceDetails result {
+    margin-top: 20px;
+    background-color: #E8E8E8; /* Pale beige */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.ServiceDetails result p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.Sum
+{
+  margin: 0%;
+  margin-bottom: 20px;
+  padding: 30px;
+  font-size: 30px;
+  color: #0C3c01;
+  background-color: #fff;
+}
+
+/**----Add Ons-----**/
+.add-ons-container {
+    margin-top: 20px;
+}
+
+.add-on {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.add-on img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.add-on-details {
+    flex-grow: 1;
+}
+
+.add-on-details h4 {
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.add-on-details p {
+    margin: 3px 0;
+    color: #777;
+}
+
+.add-on-select {
+    display: flex;
+    align-items: center;
+}
+
+.add-on-select input[type="checkbox"] {
+    margin-right: 5px;
+    width: 80px;
+    height: 40px;
+}
+
+.add-on-select label {
+    cursor: pointer;
+    color: #333;
+}
+
+/*----Calendar----*/
+/* Customize the overall calendar container */
+.ui-datepicker {
+    size:600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Change the header (month and year) */
+.ui-datepicker-header {
+    background-color: #4CAF50;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Style the day cells */
+.ui-datepicker td a {
+    color: #333;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and active states for day cells */
+.ui-datepicker td a:hover, .ui-datepicker td a.ui-state-active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Scale up the calendar */
+.ui-datepicker {
+    transform: scale(1.5); /* Adjust the scale as needed */
+    transform-origin: top left; /* Keep the calendar positioned correctly */
+    font-size: 1.2em; /* Increase font size */
+}
+
+/* Optional: Adjust the container to prevent overflow */
+#datepicker {
+    width: 400px; /* Adjust width as needed */
+    height: auto;
+}
+/**-------PopUp-------**/
+
+th, td {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding-left: 20px;
+  align-content: baseline;
+  justify-content: baseline;
+}
+
+
+td input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.popup {
+    color: #7e7e7e;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 600px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+/*----Input----*/
+/* General styling for all textarea elements */
+.checkout {
+    box-sizing: border-box;
+    display: flex;
+    width: 60%;
+}
+.checkout textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    resize: vertical; /* Allows vertical resizing */
+  }
+  
+/*--CHECKOUT---*/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    width: 80%;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    margin-left: 100px;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  .container-sum
+  {
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  /*-------------For Services-----------------*/
+  .ServiceCon
+  {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    background-color: #FFE26A;
+    padding: 20px;
+  }
+  .Service
+  {
+    display: inline;
+    margin: 10px;
+    
+  }
+
+  .Service button
+  {
+    background-color: #2F5846;
+  }
+  .Service p
+  {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0%;
+  }
+  .ServiceCon img
+  {
+    width: 200px;
+    height: 150px;
+    padding: 0%;
+  }
+
+  .Checklist
+  {
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  .des
+  {
+    width: 700px;
+    color: #707070;
+  }
+
+  /*------Payment-------*/
+
+  .MidCon
+  {
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    border: solid 1px #FFE26A;
+    border-radius: 10%;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .MidTbl
+  {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .MidCon img
+  {
+    width: 200px;
+    height: 200px;
+  }
+
+  .RMidTbl
+  {
+    width: 50%;
+    text-align: right;
+    float: right;
+  }
+
+  .LMidTbl
+  {
+    width: 30%;
+    text-align: left;
+    float: left;
+  }
+
+  /*----------FAQ------------*/
+  .faq-container {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2e7d32; /* Natural and inviting green */
+}
+
+.faq-search {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.faq-category h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #2e7d32; /* Category headers using green */
+}
+
+.faq-section {
+    margin: 10px 0;
+}
+
+.faq-question h3 {
+    font-size: 1.4rem;
+    background-color: #e8f5e9; /* Light green background for questions */
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #81c784; /* Border using green tone */
+    border-radius: 4px;
+}
+
+.faq-answer {
+    display: none; /* Hide by default */
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 3px solid #81c784;
+    background-color: #f1f8e9; /* Light green background for answers */
+    border-radius: 4px;
+}
+
+.back-to-top {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/*--------------Admin-----------------*/
+/*--------------Home------------------*/
+.Adminbanner
+{
+    display: grid;
+    width: 150px;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+}
+
+.Adminbanner img
+{
+  width: 200px;
+}
+
+.MagCon
+{
+  display: flex;
+  width: 100%;
+  background-color:#fafafa;
+  flex-wrap: wrap;
+  
+}
+
+.Mag
+{
+  display:grid;
+  color: #FFFFFF;
+  width: 150px;
+  height: 160px;
+  padding: 10px;
+  margin: 30px;
+  margin: 20px;    
+  align-items: start;
+  align-content: space-between;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.Total {
+  background-color: #4CAF50; /* Green */
+}
+
+.Ongoing {
+  background-color: #FF9800; /* Orange */
+}
+
+.Completed {
+  background-color: #2196F3; /* Blue */
+}
+
+.Canceled {
+  background-color: #F44336; /* Red */
+}
+
+
+
+.Mag h3
+{
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.BigNum
+{
+  display: grid;
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f5;
+  color: #2F5846;
+  font-weight: bold;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: -20px;
+  
+}
+
+.BigNum p
+{
+  margin: 0;
+}
+
+
+.BigNum input[type="submit"]:hover 
+{
+    background-color: #d5d5d5;
+
+}
+
+.BigNum input[type="submit"]
+{
+  width: 30px;
+  height: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f5;
+  color: #2F5846;
+  font-weight: bold;
+  font-size: 50px;
+  border: none;
+
+}
+
+/*--------MANAGE---------*/
+/* General Table Styling */
+.admintable table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.admintable table thead tr {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+.admintable table th, .admintable table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admintable table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admintable table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admintable table tbody td a {
+  color: #4CAF50;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.admintable table tbody td a:hover {
+  text-decoration: underline;
+}
+
+/*--------Form Styling----------*/
+/* Form Layout */
+.BookingDetails {
+    width: 600px;
+    margin: 0 auto;
+    margin-left: -70px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.tblrow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: -100px;
+}
+
+.tblrow label {
+    width: 300px; /* Adjust based on your label length */
+    font-weight: bold;
+    text-align: right; /* Align labels to the right */
+    padding-right: 10px;
+}
+
+.tblrow input[type="text"], 
+.tblrow input[type="date"], 
+.tblrow input[type="number"], 
+.tblrow textarea,
+.tblrow select {
+    width: 300px; /* Adjust based on your form's width */
+    height: auto;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button Styling */
+.BookingDetails input[type="submit"], 
+.BookingDetails button,
+.BookingDetails a {
+    background-color: #4CAF50;
+    font-size: 20px;
+    color: white;
+    padding: 25px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.BookingDetails input[type="submit"]:hover, 
+.BookingDetails button:hover {
+    background-color: #45a049;
+    
+}
+
+
+/* Combo Box Styling */
+.BookingDetails-combo { 
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Abtn
+{
+  padding: 15px 25px;
+  border-radius: 15%;
+  border: #111111 2px solid;
+  background-color: #4CAF50;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.Abtn:hover 
+{
+  
+  background-color: #95ef98;
+  color: #111111;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"]{
+  margin:auto;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container select {
+  margin:auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  background-color: #2F5846;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0062cc;
+}
+
+.search-container button i {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .search-container input[type="text"],
+  .search-container select {
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .search-container button {
+      width: 100%;
+  }
+}
